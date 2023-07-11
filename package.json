@@ -1,5 +1,14 @@
 {
+  "name": "poc",
   "dependencies": {
     "semantic-release": "^21.0.7"
+  },
+  "release": {
+    "branches": [
+            "main",
+            { "name": "beta", "prerelease": true },
+            { "name": "rc", "prerelease": true }
+    ],
+"plugins": ["@semantic-release/commit-analyzer", "@semantic-release/release-notes-generator", "@semantic-release/github"]
   }
 }
