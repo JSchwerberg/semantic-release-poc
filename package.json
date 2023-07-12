@@ -4,7 +4,11 @@
     "semantic-release": "^21.0.7"
   },
   "release": {
-    "branches": ["main", "next", { "name": "beta", "prerelease": true }],
+    "branches": [
+            "main",
+            { "name": "beta", "prerelease": true },
+            { "name": "alpha", "prerelease": true }
+    ],
 "plugins": ["@semantic-release/commit-analyzer", "@semantic-release/release-notes-generator", "@semantic-release/github"]
   }
 }
