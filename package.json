@@ -20,11 +20,9 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/github",
-      { "@codedependant/semantic-release-docker": {
-        "dockerImage": "semantic-release-poc",
-        "dockerRegistry": "ghcr.io",
-        "dockerProject": "merit"
-      }}
+      [ "@codedependant/semantic-release-docker", {
+        "dockerRegistry": "ghcr.io"
+      }]
     ]
   },
   "devDependencies": {
