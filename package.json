@@ -24,7 +24,7 @@
         "dockerImage": "semantic-release-poc",
         "dockerRegistry": "ghcr.io",
         "dockerProject": "merit"
-      }]
+      }}
     ]
   },
   "devDependencies": {
